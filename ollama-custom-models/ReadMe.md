@@ -28,6 +28,7 @@ num_predict	128–256
 temperature	0.6
 Notes:
 
+```
 num_ctx limits RAM usage.
 
 num_predict limits token output per request.

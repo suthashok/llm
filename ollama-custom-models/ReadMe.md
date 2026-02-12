@@ -34,7 +34,9 @@ num_predict limits token output per request.
 
 temperature controls randomness.
 
-3️⃣ Create a Modelfile
+---
+
+## 3️⃣ Create a Modelfile
 Create a folder for builds (example):
 
 cd $HOME
@@ -58,14 +60,19 @@ Keep answers under 150 words.
 """
 ⚠️ On Windows, make sure the file is named exactly Modelfile (no .txt extension).
 
-4️⃣ Build Your Custom Model
+---
+
+## 4️⃣ Build Your Custom Model
 ollama create qwen3b-concise -f Modelfile
 If successful, your model is added to Ollama’s internal storage.
 
 Check with:
 
 ollama list
-5️⃣ Run Your Model
+
+---
+
+## 5️⃣ Run Your Model
 CLI:
 ollama run qwen3b-concise
 GUI:
@@ -73,7 +80,9 @@ Open Ollama GUI
 
 Select qwen3b-concise from the model list
 
-6️⃣ Tips for Hardware-Friendly Usage
+---
+
+## 6️⃣ Tips for Hardware-Friendly Usage
 Avoid running multiple instances of Ollama simultaneously.
 
 For longer chats or RAG tasks, increase num_ctx cautiously.
@@ -83,7 +92,10 @@ Reduce num_predict for short answers to save CPU/RAM.
 Always check CPU/RAM usage:
 
 # Task Manager → Performance tab
-7️⃣ Optional: Create Multiple Profiles
+
+---
+
+## 7️⃣ Optional: Create Multiple Profiles
 You can create multiple custom models for different purposes:
 
 qwen3b-fast → short answers, low RAM
@@ -94,7 +106,9 @@ qwen3b-longchat → longer context for conversations
 
 Simply create separate Modelfiles with different num_ctx / num_predict / SYSTEM prompts.
 
-8️⃣ Notes
+---
+
+## 8️⃣ Notes
 Never edit .ollama\models manually — it’s managed by Ollama.
 
 Modelfile is only needed during ollama create.

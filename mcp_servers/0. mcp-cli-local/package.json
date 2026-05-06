@@ -1,0 +1,5 @@
+{
+  "name": "mcp-cli-local",
+  "type": "module",
+  "private": true
+}
